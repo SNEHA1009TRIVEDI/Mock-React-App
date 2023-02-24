@@ -1,0 +1,16 @@
+.body-padding{
+    padding-top: 500px;
+    
+}
+.button{
+    border-radius: 25px;  
+    background-color: #4C63AA;  
+    color:#FFFFFF;  
+    text-align :center;  
+    font-family:arial, helvetica, sans-serif;  
+    padding: 5px 10px 10px 10px;  
+    font-weight:bold;  
+    width:100px;  
+    height:30px;  
+     
+}

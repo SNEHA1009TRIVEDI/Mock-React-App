@@ -1,0 +1,13 @@
+header{
+    background-color: #38497E;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+h1{
+    font-size: 1.5em;
+}
+h1>b{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
