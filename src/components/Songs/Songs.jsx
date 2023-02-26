@@ -10,7 +10,7 @@ const Songs = ({ genre_name, imageUrl }) => {
   //  console.log(imageUrl)
   const navigate = useNavigate();
   const handleGenre = (click) => {
-    console.log(click);
+    // console.log(click);
     setClick(!click);
   }
   if(click){

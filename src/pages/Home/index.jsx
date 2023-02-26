@@ -4,9 +4,9 @@ import Body from "../../components/Body/index";
 const Home = () => {
   return (
     <div className="App">
-    <header>
+    
       <Header />
-    </header>
+
      <Body/>
   </div>
   );

@@ -1,13 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 header{
     background-color: #38497E;
     color: #fff;
     padding: 10px;
     padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-align: left;
+    height: 50px;
+    font-size: 20px;
+
 }
-h1{
-    font-size: 1.5em;
+.heading{
+    color: #fff;
 }
-h1>b{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
+@media screen and (max-width: 768px) {
+    .header {
+      font-size: 15px;
+      
+    }
+  }

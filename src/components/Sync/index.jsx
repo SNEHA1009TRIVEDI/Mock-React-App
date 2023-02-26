@@ -14,8 +14,8 @@ const Sync = () => {
         <>
         <Header/>
         <div className='body-padding'>
-        <h1>:((</h1>
-        <h1>seems a bit empty in here</h1>
+        <h1 >:((</h1>
+        <h2 className="text"> seems a bit empty in here...</h2>
 
         <button className='button' onClick={handleSync}>Sync</button>
         </div>

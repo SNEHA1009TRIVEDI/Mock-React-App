@@ -60,14 +60,16 @@ const Card = ({ data, cnt }) => {
   if (isLiked) {
     image = heart;
   }
+  const color = cnt % 2 === 0 ? 'dark' : 'light';
+
   return (
-    <div className="card-body ">
+    <div className={`card-body-${color}`}>
       <div className="image">
         <img className="song-image" src={imageUrl} alt="here is song image" />
       </div>
       <div className="lower-section">
         <div className="song-left">
-          <h1>{name}</h1>
+          <h1 className="song-name">{name}</h1>
           <p>{artist.name}</p>
         </div>
         <div className="song-right">
@@ -75,9 +77,9 @@ const Card = ({ data, cnt }) => {
             src={image}
             alt="this is heart image"
             className="heart"
-            onClick={likeHandler}
+            // onClick={likeHandler}
           />
-          <p>{count}</p>
+          <p className="count" onClick={likeHandler}>{count}</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
 // Path: my-app/src/components/Genre/index.jsx
 import React, { useState } from "react";
 import "./Genre.css";
-import icon from "../../assets/icon-genre.svg";
+import icon from "../../assets/icon-grid.svg";
 import Body from "../Body";
 import GenreBollywood from '../../assets/genre-Bollywood.png';
 import GenreCountry from '../../assets/genre-Country.png';
@@ -29,7 +29,7 @@ const Genre = ({ data }) => {
       genres.push(song.genre.name);
     }
   });
-   console.log(genres);
+  //  console.log(genres);
 
   const songsByGenreList = {};
   genres.forEach((genre) => {
@@ -39,7 +39,7 @@ const Genre = ({ data }) => {
   data.forEach((song) => {
     songsByGenreList[song.genre.name].push(song);
   });
-  // console.log(songsByGenreObject.Pop);
+  //  console.log(songsByGenreList);
 
   const genreImages = {
     Bollywood: GenreBollywood,

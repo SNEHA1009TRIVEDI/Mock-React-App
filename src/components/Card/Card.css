@@ -1,41 +1,71 @@
-.card-body{
-    width: 30%;
-    background-color: #DFDFDF;
-    /* border: black solid; */
-    border-radius: 20px;
-    border-color: black;
-    box-shadow: 0 30px 40px rgba(0,0,0,.1);
-    /* border-bottom: 50px; */
-    margin-bottom: 30px;
-    /* margin-left: 0px;
-    margin-right: 0px; */
-    /* margin: 10px; */
+.card-body-dark {
+  width: 32%;
+  height: 350px;
+  background-color: #ababab;
+  border-radius: 20px;
+  border-color: black;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-overflow: ellipsis; 
+
 }
-.card-backgroud{
-    background-color: #ABABAB;
+.card-body-light {
+  width: 32%;
+  height: 350px;
+  background-color: #dfdfdf;
+  border-radius: 20px;
+  border-color: black;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-overflow: ellipsis; 
+
 }
-.count{
+/* .card-backgroud {
+  background-color: #ababab;
+} */
+
+.heart {
+  text-align: end;
+  height: 40px;
+  padding-right: 40px;
+
+}
+.count {
     text-align: start;
-    padding-left: 10px;
-}
-.heart-image{
-    text-align: end;
-    height: 80px;
-
-}
-.song-image{
-    width: 55%;
-    height: 55%;
-    border-radius: 50%;
-    margin: 0px;
-
-}
-.lower-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    padding-left: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    right : 2px;
+    bottom: 38px;
+    color: white;
+  }
 .image{
+    padding: 10px;
+    padding-bottom: 10px;
 
-    
+    /* margin-bottom: 0px; */
+}
+.song-image {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  border-color: black;
+  border: solid;
+  margin: 0px;
+}
+.lower-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.song-left{
+    padding-left: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+    text-overflow: ellipsis; 
+
+}
+.song-name{
+    text-overflow: ellipsis;
 }

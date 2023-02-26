@@ -1,16 +1,28 @@
-.body-padding{
-    padding-top: 500px;
-    
+.body-padding {
+  padding-top: 300px;
 }
-.button{
-    border-radius: 25px;  
-    background-color: #4C63AA;  
-    color:#FFFFFF;  
-    text-align :center;  
-    font-family:arial, helvetica, sans-serif;  
-    padding: 5px 10px 10px 10px;  
-    font-weight:bold;  
-    width:100px;  
-    height:30px;  
-     
+.button {
+  border-radius: 25px;
+  border: #ffffff;
+  background-color: #4c63aa;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-weight: bold;
+  font-size: large;
+  width: 150px;
+  height: 50px;
+}
+h1 {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: lighter;
+}
+.text {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 30px;
+  color: black;
+  font-weight: normal;
+  padding: 10px;
 }
