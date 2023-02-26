@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sync should renders without crashing  1`] = `
+<DocumentFragment>
+  <header
+    class="Header"
+  >
+    <h1
+      class="heading"
+    >
+      My 
+      <strong>
+        Record
+      </strong>
+       Shelf
+    </h1>
+  </header>
+  <div
+    class="body-padding"
+  >
+    <h1>
+      :((
+    </h1>
+    <h2
+      class="text"
+    >
+       seems a bit empty in here...
+    </h2>
+    <button
+      class="button"
+    >
+      Sync
+    </button>
+  </div>
+</DocumentFragment>
+`;
