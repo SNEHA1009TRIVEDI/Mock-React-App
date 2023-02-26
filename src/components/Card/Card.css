@@ -1,0 +1,41 @@
+.card-body{
+    width: 30%;
+    background-color: #DFDFDF;
+    /* border: black solid; */
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    /* border-bottom: 50px; */
+    margin-bottom: 30px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    /* margin: 10px; */
+}
+.card-backgroud{
+    background-color: #ABABAB;
+}
+.count{
+    text-align: start;
+    padding-left: 10px;
+}
+.heart-image{
+    text-align: end;
+    height: 80px;
+
+}
+.song-image{
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    margin: 0px;
+
+}
+.lower-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image{
+
+    
+}
