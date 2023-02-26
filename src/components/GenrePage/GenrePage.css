@@ -47,3 +47,32 @@
     background-repeat: no-repeat;
     /* background-position: 10px; */
 }
+.songs-genre-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.1); */
+    text-align: start;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    right : 2px;
+    bottom: 38px;
+    color: white;
+}
+.genre-details{
+    text-align: start;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    position: relative;
+    right : 2px;
+    bottom: 38px;
+    color: white;
+
+}
