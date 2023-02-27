@@ -12,7 +12,6 @@ console.log(genre);
       <div className="songs-genre">
       <div className="genre-details">
         <img src={props.genreImage} alt={props.genre}  />
-        {/* <ButtonGenre genre={props.genre} /> */}
         <button className="genre-button"> {props.genre}</button>
       </div>
       <div className="songs-genre-content">

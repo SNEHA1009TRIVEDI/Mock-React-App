@@ -49,7 +49,7 @@ const Body = () => {
           {allRecordData ? (
             allRecordData.map((post, idx) => <Card key={idx} data={post} cnt={idx} index={idx}/>)
           ) : (
-            <div className="loading-screen">Loading!!!</div>
+            <div data-testid="loading-screen">Loading!!!</div>
           )}
         
       </div>
