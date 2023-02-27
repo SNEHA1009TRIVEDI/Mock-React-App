@@ -8,22 +8,28 @@ const Card = ({ data, cnt }) => {
   const { name, imageUrl, artist, genre } = data;
   const [isLiked, setIsLiked] = React.useState(false);
   const [count, setCount] = React.useState(0);
+  //console.log("---------------------");console.log(data);
   useEffect(() => {
     makeRequest("GET", `http://localhost:8080/api/records/${data.id}/likes`)
       .then((res) => {
         setIsLiked(res.data.data.like);
         setCount(res.data.data.count);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
   let image;
-  
 
   const likeHandler = () => {
     if (isLiked) {
-      makeRequest("PATCH", `http://localhost:8080/api/records/${data.id}/likes`,count,false)
+      makeRequest(
+        "PATCH",
+        `http://localhost:8080/api/records/${data.id}/likes`,
+        count,
+        false
+      )
         .then((res) => {
           setIsLiked(!isLiked);
           setCount(count - 1);
@@ -60,7 +66,7 @@ const Card = ({ data, cnt }) => {
   if (isLiked) {
     image = heart;
   }
-  const color = cnt % 2 === 0 ? 'dark' : 'light';
+  const color = cnt % 2 === 0 ? "dark" : "light";
 
   return (
     <div className={`card-body-${color}`}>
@@ -74,12 +80,15 @@ const Card = ({ data, cnt }) => {
         </div>
         <div className="song-right">
           <img
+            data-testid="heart-image"
             src={image}
             alt="this is heart image"
             className="heart"
-            // onClick={likeHandler}
+            onClick={likeHandler}
           />
-          <p className="count" onClick={likeHandler}>{count}</p>
+          <p className="count" data-testid="count" onClick={likeHandler}>
+            {count}
+          </p>
         </div>
       </div>
     </div>

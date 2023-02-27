@@ -5,22 +5,21 @@ import Card from "../Card/index";
 import icon2 from "../../assets/icon-grid.svg";
 // import GenrePage from "../../pages/GenrePage/index";
 const GenrePage = (props) => {
-const { genre, songs, genreImage} = props;
-console.log(genre);
+  const { genre, songs, genreImage } = props;
+  console.log(props);
   return (
     <>
       <div className="songs-genre">
-      <div className="genre-details">
-        <img src={props.genreImage} alt={props.genre}  />
-        <button className="genre-button"> {props.genre}</button>
+        <div className="genre-details">
+          <img src={props.genreImage} alt={props.genre} />
+          <button className="genre-button"> {props.genre}</button>
+        </div>
+        <div data-testid="genre-box" className="songs-genre-content">
+          {props.songs.map((song, index) => (
+            <Card key={index} data={song} index={index} />
+          ))}
+        </div>
       </div>
-      <div className="songs-genre-content">
-        {props.songs.map((song, index) => (
-          <Card key={index} data={song} index={index} />
-        ))}
-      </div>
-      
-    </div>
     </>
   );
 };

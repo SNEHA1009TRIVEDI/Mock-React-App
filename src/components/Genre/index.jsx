@@ -51,29 +51,6 @@ const Genre = ({ data }) => {
   return (
 
     <>
-
-      {/* <div className="body-genre">
-        <h1>Select Genre</h1>
-        <div>
-          <img
-            src={icon}
-            alt="icon-genre"
-            className="icon-genre"
-            onClick={handleGenre}
-          />
-        </div>
-        <div className="genre-content">
-          
-        {data.map((post, idx) => {
-          
-          return <Songs
-            genre_name={post.genre.name}
-            imageUrl={`../../assets/genre-${post.genre.name}`}
-          />;
-        })}
-      </div>
-      </div>
-       */}
        <div className="songs-by-genre">
       <div className="genre-header">
         <h2>genres</h2>
